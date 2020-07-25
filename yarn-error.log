@@ -1,5 +1,5 @@
 Arguments: 
-  /home/julio/.nvm/versions/node/v12.16.1/bin/node /usr/share/yarn/bin/yarn.js add -D @types/hapi__Joi
+  /home/julio/.nvm/versions/node/v12.16.1/bin/node /usr/share/yarn/bin/yarn.js add class-transform
 
 PATH: 
   /home/julio/.yarn/bin:/home/julio/.config/yarn/global/node_modules/.bin:/home/julio/.yarn/bin:/home/julio/.config/yarn/global/node_modules/.bin:/home/julio/.nvm/versions/node/v12.16.1/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin:/home/julio/Android/Sdk/tools:/home/julio/Android/Sdk/platform-tools:/dados/Android/Sdk/emulator:/dados/Android/Sdk/tools:/dados/Android/Sdk/tools/bin:/dados/Android/Sdk/platform-tools:/dados/android-studio/bin:/dados/Android/Sdk/emulator:/dados/Android/Sdk/tools:/dados/Android/Sdk/tools/bin:/dados/Android/Sdk/platform-tools:/dados/android-studio/bin
@@ -14,7 +14,7 @@ Platform:
   linux x64
 
 Trace: 
-  Error: https://registry.yarnpkg.com/@types%2fhapi__Joi: Not found
+  Error: https://registry.yarnpkg.com/class-transform: Not found
       at Request.params.callback [as _callback] (/usr/share/yarn/lib/cli.js:66987:18)
       at Request.self.callback (/usr/share/yarn/lib/cli.js:140748:22)
       at Request.emit (events.js:311:20)
@@ -44,6 +44,7 @@ npm manifest:
       "celebrate": "^12.1.2",
       "cors": "^2.8.5",
       "date-fns": "^2.12.0",
+      "dotenv": "^8.2.0",
       "express": "^4.17.1",
       "express-async-errors": "^3.1.1",
       "handlebars": "^4.7.6",
@@ -61,6 +62,7 @@ npm manifest:
       "@types/bcryptjs": "^2.4.2",
       "@types/cors": "^2.8.6",
       "@types/express": "^4.17.6",
+      "@types/hapi__joi": "^17.1.4",
       "@types/jest": "^26.0.0",
       "@types/jsonwebtoken": "^8.3.9",
       "@types/mongodb": "^3.5.25",
@@ -730,7 +732,7 @@ Lockfile:
     dependencies:
       "@types/node" "*"
   
-  "@types/hapi__joi@17.x.x":
+  "@types/hapi__joi@17.x.x", "@types/hapi__joi@^17.1.4":
     version "17.1.4"
     resolved "https://registry.yarnpkg.com/@types/hapi__joi/-/hapi__joi-17.1.4.tgz#e46cd1bd81d25cd45247d652dadb3666514d807c"
     integrity sha512-gqY3TeTyZvnyNhM02HgyCIoGIWsTFMnuzMfnD8evTsr1KIfueGJaz+QC77j+dFvhZ5cJArUNjDRHUjPxNohzGA==
@@ -1852,6 +1854,11 @@ Lockfile:
     version "6.2.0"
     resolved "https://registry.yarnpkg.com/dotenv/-/dotenv-6.2.0.tgz#941c0410535d942c8becf28d3f357dbd9d476064"
     integrity sha512-HygQCKUBSFl8wKQZBSemMywRWcEDNidvNbjGVyZu3nbZ8qq9ubiPoGLMdRDpfSrpkkm9BXYFkpKxxFX38o/76w==
+  
+  dotenv@^8.2.0:
+    version "8.2.0"
+    resolved "https://registry.yarnpkg.com/dotenv/-/dotenv-8.2.0.tgz#97e619259ada750eea3e4ea3e26bceea5424b16a"
+    integrity sha512-8sJ78ElpbDJBHNeBzUbUVLsqKdccaa/BXF1uPTw3GrvQTBgrQrtObr2mUrE38vzYd8cEv+m/JBfDLioYcfXoaw==
   
   dynamic-dedupe@^0.3.0:
     version "0.3.0"
